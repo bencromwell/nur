@@ -6,7 +6,7 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> { } }:
+{ pkgs ? import <nixpkgs> { }, ... }:
 
 {
   # The `lib`, `modules`, and `overlays` names are special
@@ -14,7 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  sshush = pkgs.callPackage ./pkgs/sshush {};
+  sshush = pkgs.callPackage ./pkgs/sshush { };
   git-spruce = pkgs.callPackage ./pkgs/git-spruce { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
