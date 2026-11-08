@@ -5,6 +5,7 @@
 }:
 let
   version = "2.1.4";
+  commit = "156ab8b9a7898776b0ec4e7ce61c4981b6497664";
 in
 (buildGoModule {
   name = "sshush";
@@ -22,6 +23,7 @@ in
   ldflags = [
     "-s" "-w"
     "-X main.version=${version}"
+    "-X main.commit=${commit}"
   ];
 
   meta = with lib; {
