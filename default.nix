@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   sshush = pkgs.callPackage ./pkgs/sshush {};
+  # git-spruce = pkgs.callPackage ./pkgs/git-spruce { }; # package ready in ./pkgs/git-spruce
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
