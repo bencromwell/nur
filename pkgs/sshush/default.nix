@@ -4,7 +4,7 @@
   fetchFromGitHub,
 }:
 let
-  version = "2.1.1";
+  version = "2.1.4";
 in
 (buildGoModule {
   name = "sshush";
@@ -14,10 +14,8 @@ in
     owner = "bencromwell";
     repo = "sshush";
     rev = "v${version}";
-    sha256 = "sha256-scsn09pUVm/rf2/0FgWt2hc7/tUjiVSPH7JiaTREwhw=";
+    sha256 = "sha256-b2579e74e1a4fba52eb85eff50a6ef2c7d9c30e2b9108f4678bf11c946fcd07a";
   };
-
-  vendorHash = "sha256-6zvwxTwkIBdJ39fpaGpUmY59VGXsxEPwnq67Yf+jTGg=";
 
   ldflags = [
     "-s" "-w"
