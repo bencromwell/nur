@@ -56,4 +56,4 @@ this repo.
 ## Packages
 
 - `sshush` — SSH config management from YAML files, with groups
-- `git-spruce` — CLI for sprucing up your local git, cleans out branches that have been merged upstream (packaged in [pkgs/git-spruce](./pkgs/git-spruce), not yet enabled in [default.nix](./default.nix))
+- `git-spruce` — CLI for sprucing up your local git, cleans out branches that have been merged upstream
