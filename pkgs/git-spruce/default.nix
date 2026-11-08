@@ -5,8 +5,8 @@
   fetchFromGitHub,
 }:
 let
-  version = "0.3.0";
-  commit = "44b8354c2bdb9813876e4ba4ae1953df4e77a30a";
+  version = "1.0.0";
+  commit = "d40e5a2cc143b18bae9910eff3a882c301786e09";
 in
 
 (buildGoModule {
@@ -17,10 +17,10 @@ in
     owner = "bencromwell";
     repo = "git-spruce";
     rev = "v${version}";
-    sha256 = "sha256-guN+hX6CmMD7L20QgGPepl4nWN9sV3RlkUgJDBYuyhE=";
+    sha256 = "sha256-4zldzQDo0PDqvx/EnhFWiTtoz+KmZAdl9ZpA7jxyCYQ=";
   };
 
-  vendorHash = "sha256-POgXUoq3LtX7hy0rZihiC0Ci9U0s/CP8c/VW2T5sH/U=";
+  vendorHash = "sha256-tJgbxjSp5bqtS8jqoRRJkMFsQ3a3PWiPFBJHjXSSYKY=";
 
   # tests create git commits, which requires git and an identity in the sandbox
   nativeCheckInputs = [ git ];
