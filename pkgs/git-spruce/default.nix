@@ -5,8 +5,8 @@
   fetchFromGitHub,
 }:
 let
-  version = "1.0.0";
-  commit = "d40e5a2cc143b18bae9910eff3a882c301786e09";
+  version = "1.0.1";
+  commit = "c903ce007beb256769671571d24a4cdb35928aee";
 in
 
 (buildGoModule {
@@ -17,7 +17,7 @@ in
     owner = "bencromwell";
     repo = "git-spruce";
     rev = "v${version}";
-    sha256 = "sha256-4zldzQDo0PDqvx/EnhFWiTtoz+KmZAdl9ZpA7jxyCYQ=";
+    sha256 = "sha256-fsfLLKlBN3LqyxdJVQBLjlsJNq0KCW01nz736MQCJ3A=";
   };
 
   vendorHash = "sha256-tJgbxjSp5bqtS8jqoRRJkMFsQ3a3PWiPFBJHjXSSYKY=";
