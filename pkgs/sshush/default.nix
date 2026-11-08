@@ -14,8 +14,10 @@ in
     owner = "bencromwell";
     repo = "sshush";
     rev = "v${version}";
-    sha256 = "sha256-b2579e74e1a4fba52eb85eff50a6ef2c7d9c30e2b9108f4678bf11c946fcd07a";
+    sha256 = "sha256-PS0zF3lLJckwfmmw3ETcomTu4TGeE4j80eH6wcl/wbQ=";
   };
+
+  vendorHash = "sha256-FmNqoJ28v4rSd/1yrWBSKC80eefc4ZCNPktlV9IkP78=";
 
   ldflags = [
     "-s" "-w"
